@@ -1,0 +1,336 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CKM.SECommon
+</name>
+</assembly>
+<members>
+<member name="T:CKM.SECommon.ASMWalker">
+ <summary>
+ Class can be used to generate a unique list of occurences for an assembly including occurences from subassemblies
+ </summary>
+</member>
+<member name="M:CKM.SECommon.ASMWalker.UniqueOccList">
+ <summary>
+ Function to generate a unique list of occurences for the referenced assembly including occurences from subassemblies, depending on the properties
+ </summary>
+ <returns>List of occurences. Every Occurence is only once included</returns>
+</member>
+<member name="T:CKM.SECommon.CFilename">
+ <summary>
+ Helper Class for the work with filenames. Most tasks can also be done with the System.IO.Path class.
+ </summary>
+</member>
+<member name="M:CKM.SECommon.CFilename.#ctor(System.String)">
+ <summary>
+ Constructor of the Class
+ </summary>
+ <param name="fullfilename">Filename including Path and extension</param>
+</member>
+<member name="M:CKM.SECommon.CFilename.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Constructor of the Class
+ </summary>
+ <param name="strPath">Path (can be terminated by "\")</param>
+ <param name="strFilename">Filename</param>
+ <param name="strExtension">Extension (can start with ".")</param>
+</member>
+<member name="P:CKM.SECommon.CFilename.Path">
+ <summary>
+ Property Path
+ </summary>
+ <returns>Path ending with "\"</returns>
+</member>
+<member name="P:CKM.SECommon.CFilename.Filename">
+ <summary>
+ Property Filename
+ </summary>
+ <returns>Filename without extension</returns>
+</member>
+<member name="P:CKM.SECommon.CFilename.Extension">
+ <summary>
+ Property Extension
+ </summary>
+ <returns>Extension beginning with "."</returns>
+</member>
+<member name="P:CKM.SECommon.CFilename.PathFilenameExtension">
+ <summary>
+ Property PathFilenameExtension
+ </summary>
+ <returns>Full filename including path and extension</returns>
+</member>
+<member name="M:CKM.SECommon.CFilename.PathFilename">
+ <summary>
+ PathFilename
+ </summary>
+ <returns>Path and filename without extension</returns>
+</member>
+<member name="M:CKM.SECommon.CFilename.ShortPath(System.Int32)">
+ <summary>
+ Creates a short version of the path. Missing folderstructure is representd by \...\
+ </summary>
+ <param name="MaxLength">Maximum number of chars for the string</param>
+ <returns>String with a short version of the path</returns>
+</member>
+<member name="M:CKM.SECommon.CFilename.FileExists">
+ <summary>
+ Checks if the specified file exists
+ </summary>
+ <returns>TRUE if the file exists</returns>
+</member>
+<member name="M:CKM.SECommon.CFilename.DirectoryExists">
+ <summary>
+ Checks if the directory, specified by path, exists
+ </summary>
+ <returns>TRUE if the directory exists</returns>
+</member>
+<member name="M:CKM.SECommon.CFilename.FileDelete">
+ <summary>
+ Deletes the file, if it exists
+ </summary>
+</member>
+<member name="M:CKM.SECommon.CFilename.ParseFullFileName(System.String)">
+ <summary>
+ Cuts the given filename in pieces
+ </summary>
+ <param name="value">fullfilename including path, filename and extension</param>
+</member>
+<member name="P:CKM.SECommon.DocumentItem.AllDocumentItems">
+ <summary>
+ Returns all direct and descendant children.
+ </summary>
+</member>
+<member name="T:CKM.SECommon.DNSys">
+ <summary>
+ Class for the work with drawingnumber systems
+ </summary>
+</member>
+<member name="T:CKM.SECommon.DNSysAPA">
+ <summary>
+ Class for the work with APA drawingnumber systems
+ </summary>
+</member>
+<member name="T:CKM.SECommon.DNSysCKM">
+ <summary>
+ Class for the work with CKM drawingnumber systems
+ </summary>
+</member>
+<member name="T:CKM.SECommon.DNSysINNO">
+ <summary>
+ Class for the work with Innomatec drawingnumber systems
+ </summary>
+</member>
+<member name="T:CKM.SECommon.DNSysRP">
+ <summary>
+ Class for the work with RP drawingnumber systems
+ </summary>
+</member>
+<member name="T:CKM.SECommon.EnumHelper">
+ <summary>
+ Modul with some functions for the work with enums
+ </summary>
+</member>
+<member name="M:CKM.SECommon.EnumHelper.GetEnumDescriptions(System.Type)">
+ <summary>
+ Extracts all descritions (or if empty) the valuenames of the given enum to a string array
+ </summary>
+ <param name="enumType">Type of the enum to extract the descritions</param>
+ <returns>String Array with all the descritions</returns>
+</member>
+<member name="M:CKM.SECommon.EnumHelper.GetEnumDescription(System.Enum)">
+ <summary>
+ Extracts descrition (or if empty) the valuename of the given enum constant
+ </summary>
+ <param name="enumConstant">Enum constant to extract description or valuename</param>
+ <returns>String with the descrition or valuename</returns>
+</member>
+<member name="M:CKM.SECommon.EnumHelper.ParseEnumDescrition(System.Type,System.String)">
+ <summary>
+ Returns the enum value for a enum descrition
+ </summary>
+ <param name="enumType">Type of the enum to get the value from the descrition</param>
+ <param name="Description">Descrition of enum constant</param>
+ <returns>Enum constant</returns>
+</member>
+<member name="M:CKM.SECommon.EnumHelper.CountEnumMembers(System.Type)">
+ <summary>
+ Counts the members of an enum
+ </summary>
+ <param name="enumType">Type of the enum to count the members</param>
+ <returns>Number of members</returns>
+</member>
+<member name="M:CKM.SECommon.EnumHelper.CountEnumMembers(System.Enum)">
+ <summary>
+ Counts the members of an enum
+ </summary>
+ <param name="enumConstant">Enum constant of the enum to count the members</param>
+ <returns>Number of members</returns>
+</member>
+<member name="M:CKM.SECommon.SEAppFunctions.SELogFilePath(SolidEdgeFramework.Application@)">
+ <summary>
+ Function to get the Path to Solid Edge Global LogFile Directory
+ </summary>
+ <param name="objSEApplication">Solid Edge Application Object</param>
+ <returns>String witch contains the Path of the Global LogFileDir</returns>
+ <remarks></remarks>
+</member>
+<member name="T:CKM.SECommon.SEDocFunctions">
+ <summary>
+ Class with some functions for the work solid edge documents
+ </summary>
+</member>
+<member name="M:CKM.SECommon.SEDocFunctions.FileWritable(SolidEdgeFramework.SolidEdgeDocument,System.Boolean)">
+ <summary>
+ Checks if document is writeable, optionally tries to make the file writable
+ </summary>
+ <param name="objSeDoc">SolidEdgeDocument</param>
+ <param name="bolUnlock">If TRUE makes the file writable if possible</param>
+ <returns>TRUE if the file is writable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CKM.SECommon.SEDocFunctions.StatusAvailable(SolidEdgeFramework.SolidEdgeDocument,System.Boolean)">
+ <summary>
+ Checks if document status is available, optionally tries to make the file available
+ </summary>
+ <param name="objSeDoc">SolidEdgeDocument</param>
+ <param name="bolOverwriteStatus">If TRUE makes the file available if possible</param>
+ <returns>TRUE if the file is available</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CKM.SECommon.SEDocFunctions.TrueFilename(SolidEdgeFramework.SolidEdgeDocument)">
+ <summary>
+ The filename of Assemblys which are familiy of assemblies contain a "!" and the configuration name
+ </summary>
+ <param name="objSeDoc">Solid Edge Document</param>
+ <returns>Fullname without the "!" and the rest of the foa name</returns>
+</member>
+<member name="M:CKM.SECommon.SEDocFunctions.IsWeldmentASM(SolidEdgeFramework.SolidEdgeDocument)">
+ <summary>
+ Detects, if a Solid Edge Document is a weldment assembly
+ </summary>
+ <param name="objDoc">Solid Edge Document</param>
+ <returns>TRUE if the document is a weldment assembly</returns>
+</member>
+<member name="M:CKM.SECommon.SEDocFunctions.IsWeldmentASM(System.String)">
+ <summary>
+ Detects, if a Solid Edge Document is a weldment assembly
+ </summary>
+ <param name="fullname">Fullname of Solid Edge Document</param>
+ <returns>TRUE if the document is a weldment assembly</returns>
+</member>
+<member name="T:CKM.SECommon.SEPropFunctions">
+ <summary>
+ Class with some functions for the work solid edge properties
+ </summary>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropEmpty(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.String)">
+ <summary>
+ Checks if a property is empty
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="strProp">property name</param>
+ <returns>TRUE if the property is empty</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropEmpty(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.Int32)">
+ <summary>
+ Checks if a property is empty
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="intPropID">property id</param>
+ <returns>TRUE if the property is empty</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropRead(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.String)">
+ <summary>
+ Reads the value of a property
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="strProp">property name</param>
+ <returns>Value of the property as string</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropRead(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.Int32)">
+ <summary>
+ Reads the value of a property
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="intPropID">property id</param>
+ <returns>Value of the property as string</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropEqual(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.String,System.String)">
+ <summary>
+ Checks if the value of a property is equal to a given value
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="strProp">property name</param>
+ <param name="strNewValue">value to check</param>
+ <returns>TRUE if the value is equal</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropEqual(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.Int32,System.String)">
+ <summary>
+ Checks if the value of a property is equal to a given value
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="intPropID">property id</param>
+ <param name="strNewValue">value to check</param>
+ <returns>TRUE if the value is equal</returns>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropFill(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Writes a string value to a property, if the value is empty. With the optional parameter set to true existing values are ignored and the new value is written. 
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="strProp">property name</param>
+ <param name="strNewValue">value to write</param>
+ <param name="bolOver">If TRUE ignore existing value</param>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropFill(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.Int32,System.String,System.Boolean)">
+ <summary>
+ Writes a string value to a property, if the value is empty. With the optional parameter set to true existing values are ignored and the new value is written.
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="intPropID">property id</param>
+ <param name="strNewValue">value to write</param>
+ <param name="bolOver">If TRUE ignore existing value</param>
+</member>
+<member name="M:CKM.SECommon.SEPropFunctions.PropFill(SolidEdgeFramework.SolidEdgeDocument@,System.String,System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ Writes a integer value to a property, if the value is empty. With the optional parameter set to true existing values are ignored and the new value is written.
+ </summary>
+ <param name="objSeDoc">solid edge document</param>
+ <param name="strPropertySet">property set</param>
+ <param name="intPropID">property id</param>
+ <param name="intNewValue">value to write</param>
+ <param name="bolOver">If TRUE ignore existing value</param>
+</member>
+<member name="M:CKM.SECommon.StringHelper.PathShorten(System.String,System.Int32)">
+ <summary>
+ Creates a short version of the path. Missing folderstructure is representd by \...\
+ </summary>
+ <param name="Path">Long version of the path</param>
+ <param name="Length">Maximum number of chars for the string</param>
+ <returns>String with a short version of the path</returns>
+</member>
+<member name="M:CKM.SECommon.StringHelper.CutDoubleUnderline(System.String)">
+ <summary>
+ Removes the DoubleUnderline and everything following right from a filename
+ </summary>
+ <param name="Filename"></param>
+ <returns>Everything left from the "__"</returns>
+</member>
+<member name="M:CKM.SECommon.StringHelper.CutFileExtension(System.String)">
+ <summary>
+ Removes the fileextension from a filename
+ </summary>
+ <param name="Filename"></param>
+ <returns>Filename without extension</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,15 @@
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\CreateHoleWithUserDefinedPattern.exe.config
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\CreateHoleWithUserDefinedPattern.exe
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\CreateHoleWithUserDefinedPattern.pdb
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\CKM.SECommon.dll
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\Interop.SolidEdge.dll
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\SolidEdge.Community.dll
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\CKM.SECommon.xml
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\Interop.SolidEdge.xml
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\bin\Debug\SolidEdge.Community.xml
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.csproj.AssemblyReference.cache
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.csproj.SuggestedBindingRedirects.cache
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.csproj.CoreCompileInputs.cache
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.csproj.CopyComplete
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.exe
+C:\Users\piotr.andrzejewski\source\repos\Samples-master\Part\CreateHoleWithUserDefinedPattern\cs\CreateHoleWithUserDefinedPattern\obj\Debug\CreateHoleWithUserDefinedPattern.pdb
